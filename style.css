@@ -89,9 +89,13 @@
   padding: 40px;
 }
 
-.search,
-.big,
-.left {
+.form-input {
+  background-color: rgba(189, 165, 165, 0.62);
+  padding: 40px;
+}
+
+.form-input__big,
+.form-input__right {
   margin-bottom: 10px;
 }
 
@@ -99,7 +103,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: 224px;
   margin-bottom: 40px;
 }
 
@@ -117,10 +120,8 @@
   border: none;
   border-radius: 100px;
   width: 206px;
-  height: 34px;
   padding: 10px 12px 10px 12px;
   outline: 0;
-  outline-offset: 0;
 }
 
 .form-input__button {
@@ -133,23 +134,23 @@
   left: 174px;
 }
 
-.form-input_big input:valid,
-.form-input_right input:valid,
-.form-input_left input:valid {
+.form-input__big input:valid,
+.form-input__right input:valid,
+.form-input__left input:valid {
   background: white;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
-.form-input_big input:invalid,
-.form-input_right input:invalid,
-.form-input_left input:invalid {
+.form-input__big input:invalid,
+.form-input__right input:invalid,
+.form-input__left input:invalid {
   background: #DBDBDB;
 
 }
 
-.form-input_big input:focus,
-.form-input_right input:focus,
-.form-input_left input:focus {
+.form-input__big input:focus,
+.form-input__right input:focus,
+.form-input__left input:focus {
   background: white;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   font-weight: 500;
@@ -158,24 +159,24 @@
 }
 
 
-.form-input_big__input:focus,
-.form-input_left__input:focus,
-.form-input_right__input:focus {
+.form-input__big-input:focus,
+.form-input__left-input:focus,
+.form-input__right-input:focus {
   padding: 7px 10px 7px 10px;
   font-size: 12px;
   line-height: 14px;
 }
 
 
-.form-input_big__input:hover,
-.form-input_left__input:hover,
-.form-input_right__input:hover {
+.form-input__big-input:hover,
+.form-input__left-input:hover,
+.form-input__right-input:hover {
   padding: 7px 10px 7px 10px;
 }
 
-.form-input_big__input,
-.form-input_left__input,
-.form-input_right__input {
+.form-input__big-input,
+.form-input__left-input,
+.form-input__right-input {
   outline: 0;
   outline-offset: 0;
   font-size: 12px;
@@ -184,19 +185,19 @@
   padding: 7px 10px 7px 10px;
 }
 
-.form-input_big__input {
+.form-input__big-input {
   border: none;
   border-radius: 14px;
 }
 
-.form-input_left__input {
+.form-input__left-input {
   border: none;
-  border-radius: 40px 0 0 40px;
+  border-radius: 40px 0px 0px 40px;
 }
 
-.form-input_right__input {
+.form-input__right-input {
   border: none;
-  border-radius: 0 40px 40px 0;
+  border-radius: 0px 40px 40px 0px;
 }
 
 
