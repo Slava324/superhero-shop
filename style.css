@@ -86,17 +86,7 @@
 
 .form-input {
   background-color: rgba(189, 165, 165, 0.62);
-  padding: 40px;
-}
-
-.form-input {
-  background-color: rgba(189, 165, 165, 0.62);
-  padding: 40px;
-}
-
-.form-input__big,
-.form-input__right {
-  margin-bottom: 10px;
+  padding: 30px;
 }
 
 .form-input__search {
@@ -134,23 +124,22 @@
   left: 174px;
 }
 
-.form-input__big input:valid,
-.form-input__right input:valid,
-.form-input__left input:valid {
+.form-input_big input:valid,
+.form-input_right input:valid,
+.form-input_left input:valid {
   background: white;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
-.form-input__big input:invalid,
-.form-input__right input:invalid,
-.form-input__left input:invalid {
+.form-input_big input:invalid,
+.form-input_right input:invalid,
+.form-input_left input:invalid {
   background: #DBDBDB;
-
 }
 
-.form-input__big input:focus,
-.form-input__right input:focus,
-.form-input__left input:focus {
+.form-input_big input:focus,
+.form-input_right input:focus,
+.form-input_left input:focus {
   background: white;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   font-weight: 500;
@@ -158,46 +147,45 @@
   line-height: 14px;
 }
 
-
-.form-input__big-input:focus,
-.form-input__left-input:focus,
-.form-input__right-input:focus {
+.form__input_big:focus,
+.form__input_left:focus,
+.form__input_right:focus {
   padding: 7px 10px 7px 10px;
   font-size: 12px;
   line-height: 14px;
 }
 
-
-.form-input__big-input:hover,
-.form-input__left-input:hover,
-.form-input__right-input:hover {
+.form__input_big:hover,
+.form__input_left:hover,
+.form__input_right:hover {
   padding: 7px 10px 7px 10px;
 }
 
-.form-input__big-input,
-.form-input__left-input,
-.form-input__right-input {
+.form__input_big,
+.form__input_left,
+.form__input_right {
   outline: 0;
   outline-offset: 0;
   font-size: 12px;
   line-height: 14px;
   width: 100%;
   padding: 7px 10px 7px 10px;
+  margin-bottom: 16px;
 }
 
-.form-input__big-input {
+.form__input_big {
   border: none;
   border-radius: 14px;
 }
 
-.form-input__left-input {
+.form__input_left {
   border: none;
-  border-radius: 40px 0px 0px 40px;
+  border-radius: 40px 0 0 40px;
 }
 
-.form-input__right-input {
+.form__input_right {
   border: none;
-  border-radius: 0px 40px 40px 0px;
+  border-radius: 0 40px 40px 0;
 }
 
 
