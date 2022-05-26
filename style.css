@@ -52,9 +52,10 @@
 }
 
 .client-address {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   border-radius: 35px;
-  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  padding: 21px 18px 38px 25px;
   font-size: 12px;
   line-height: 14px;
 }
@@ -66,10 +67,6 @@
 
 .client-name {
   font-weight: 600;
-}
-
-.client-address__body > p {
-  margin: 3px 0 3px 0
 }
 
 
