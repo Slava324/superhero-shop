@@ -1,54 +1,94 @@
-.button{
-  padding:5px 15px;
-  border:1px solid black;
-  border-radius: 10px;
-  background: aliceblue;
-  display: inline-block;
-  text-align: center;
-  min-width: 150px;
+.shop-card {
+  max-width: 232px;
+  padding: 5px;
+  position: relative;
+}
+.shop-card__view {
+
+}
+.sc-poster {
+  width: 232px;
+  height: 352px;
+  overflow: hidden;
+  border-radius: 35px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sc-poster__img {
+  width: 100%;
+  height: 100%;
 }
 
-.button--full{
-  display: block;
+.sc-rating {
+  width: 70px;
+  height: 40px;
+  border-radius: 0 20px 0 0;
+  border: 1px solid white;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.heading1 {
-  font-size: 36px;
-  font-weight: 500;
-  font-stretch: condensed;
-  color: #000000;
-  line-height: 42px;
-}
+.sc-rating__star {
 
-.heading2 {
-  font-size: 24px;
-  font-weight: 500;
-  font-stretch: condensed;
-  color: #000000;
-  line-height: 28px;
-  text-transform: uppercase;
 }
-
-.heading3 {
+.sc-rating__point {
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 700;
-  color: #000000;
   line-height: 21px;
+  padding-left: 5px;
 }
-
-.heading4 {
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: condensed;
-  color: #000000;
-  line-height: 19px;
+.shop-card__info {
+  display: grid;
 }
-
-.heading5 {
+.sc-comics-name {
+  font-weight: 600;
   font-size: 14px;
-  font-weight: 500;
-  font-stretch: condensed;
-  color: #000000;
   line-height: 16px;
+  padding: 10px 0 5px 0;
+  z-index: 1
+}
+.shop-card:hover .sc-comics-name {
+  color: white;
+  transition-duration: 1s;
+}
+.sc-collection-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  z-index: 1
+}
+.shop-card:hover .sc-collection-name {
+  color: white;
+  transition-duration: 1s;
+}
+
+.shop-card__price-box {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #EE171F;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+}
+.shop-card:hover .shop-card__price-box {
+  bottom: 40px;
+  transition-duration: 1s;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  background-color: #DBDBDB;
+  width: 104px;
+  height: 82px;
+  margin: 10px;
 }
 
 .button-basic {
@@ -186,6 +226,59 @@
 .form__input_right {
   border: none;
   border-radius: 0 40px 40px 0;
+=======
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
+  background-color: #DBDBDB;
+
+.shop-card__cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0, 0.75);
+  border-radius: 5px;
+  width: 100%;
+  height: 0;
+}
+  
+.shop-card:hover .shop-card__cover {
+  height: 50%;
+  transition-duration: 1s;
+}
+  
+.sc-cover-content {
+  padding: 19px 12px;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  height: 50%;
+  color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+  
+.shop-card:hover .sc-cover-content {
+  transition-duration: 1s;
+}
+
+.client-address {
+  background: #FFFFFF;
+  border-radius: 35px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  padding: 21px 18px 38px 25px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.client-address__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-name {
+  font-weight: 600;
 }
 
 
