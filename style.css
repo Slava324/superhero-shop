@@ -91,6 +91,142 @@
   margin: 10px;
 }
 
+.button-basic {
+  display: inline-block;
+  background: #EE171F;
+  color: #FFFFFF;
+  padding: 5px 25px;
+  border-radius: 11.5px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+}
+
+.button a {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.button-basic_full {
+  display: block;
+}
+
+.button-basic_white {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.button-basic_shadow {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.form-input {
+  background-color: rgba(189, 165, 165, 0.62);
+  padding: 30px;
+}
+
+.form-input__search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form-input__input:focus {
+  border: 1px solid #EE171F;
+  padding: 9px 18px 9px 11px;
+}
+
+.form-input__input:hover {
+  border: 1px solid #EE171F;
+  padding: 9px 18px 9px 11px;
+}
+
+.form-input__input {
+  border: none;
+  border-radius: 100px;
+  width: 206px;
+  padding: 10px 12px 10px 12px;
+  outline: 0;
+}
+
+.form-input__button {
+  background-color: #EE171F;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 100px;
+  position: absolute;
+  left: 174px;
+}
+
+.form-input_big input:valid,
+.form-input_right input:valid,
+.form-input_left input:valid {
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+.form-input_big input:invalid,
+.form-input_right input:invalid,
+.form-input_left input:invalid {
+  background: #DBDBDB;
+}
+
+.form-input_big input:focus,
+.form-input_right input:focus,
+.form-input_left input:focus {
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__input_big:focus,
+.form__input_left:focus,
+.form__input_right:focus {
+  padding: 7px 10px 7px 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.form__input_big:hover,
+.form__input_left:hover,
+.form__input_right:hover {
+  padding: 7px 10px 7px 10px;
+}
+
+.form__input_big,
+.form__input_left,
+.form__input_right {
+  outline: 0;
+  outline-offset: 0;
+  font-size: 12px;
+  line-height: 14px;
+  width: 100%;
+  padding: 7px 10px 7px 10px;
+  margin-bottom: 16px;
+}
+
+.form__input_big {
+  border: none;
+  border-radius: 14px;
+}
+
+.form__input_left {
+  border: none;
+  border-radius: 40px 0 0 40px;
+}
+
+.form__input_right {
+  border: none;
+  border-radius: 0 40px 40px 0;
+=======
 .checkbox {
   width: 16px;
   height: 16px;
